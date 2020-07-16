@@ -16,7 +16,7 @@ export default function QuizForm(props) {
 
   const addQuiz = () => {
     console.log("Add Quiz..");
-    setFormVisible(false);
+    setFormVisible("QuizList");
     console.log({ name, q1, a1 })
     return firestore.collection('quizes').add({ name, q1, a1 });
   }
